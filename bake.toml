@@ -24,5 +24,6 @@ defines = ["HAVE_CONFIG_H", "_GNU_SOURCE", "_POSIX_C_SOURCE=200809L", "_XOPEN_SO
 libraries = ["pthread"]
 
 [target."*-windows-gnu"]
-defines = ["CARES_STATICLIB", "WIN32_LEAN_AND_MEAN", "_WIN32_WINNT=0x0602", "_CRT_SECURE_NO_DEPRECATE", "_CRT_NONSTDC_NO_DEPRECATE"]
+defines = ["WIN32_LEAN_AND_MEAN", "_WIN32_WINNT=0x0602", "_CRT_SECURE_NO_DEPRECATE", "_CRT_NONSTDC_NO_DEPRECATE"]
+public_defines = ["CARES_STATICLIB"]
 libraries = ["ws2_32", "advapi32", "iphlpapi"]
